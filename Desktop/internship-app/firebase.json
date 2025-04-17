@@ -1,0 +1,16 @@
+{
+  "hosting": {
+    "public": "# Choose \"GitHub\" as the deployment method",
+    "ignore": [
+      "firebase.json",
+      "**/.*",
+      "**/node_modules/**"
+    ],
+    "rewrites": [
+      {
+        "source": "**",
+        "destination": "/index.html"
+      }
+    ]
+  }
+}

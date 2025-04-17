@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Auto Internship Finder</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Auto Internship Finder 🚀</h1>
+        
+        <!-- Upload Form -->
+        <form id="uploadForm">
+            <div class="form-group">
+                <label for="resume">Upload Resume (PDF/DOCX):</label>
+                <input type="file" id="resume" accept=".pdf,.docx" required>
+            </div>
+            
+            <div class="form-group">
+                <label for="location">Preferred Location:</label>
+                <input type="text" id="location" placeholder="e.g., New York" required>
+            </div>
+            
+            <div class="form-group">
+                <label for="startDate">Start Date:</label>
+                <input type="date" id="startDate" required>
+            </div>
+            
+            <button type="submit">Find Internships</button>
+        </form>
+
+        <!-- Loading Spinner -->
+        <div id="loading" class="hidden">
+            <div class="spinner"></div>
+            <p>Searching for internships...</p>
+        </div>
+
+        <!-- Results Display -->
+        <div id="results"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
